@@ -111,6 +111,11 @@ a:hover {
   color: var(--primary-color);
 }
 
+.bg-foo {
+  background-color: white;
+  color: white;
+}
+
 ::selection {
   background: var(--primary-color);
   color: var(--white-color);
@@ -122,8 +127,8 @@ a:hover {
 }
 
 .section-padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .custom-border-radius {
