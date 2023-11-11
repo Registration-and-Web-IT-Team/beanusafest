@@ -786,78 +786,69 @@ strong {
   border-radius: 20px;
 }
 
-
 /*---------------------------------------
-  CONTACT              
+  PARTNERSHIP LOGOS              
 -----------------------------------------*/
-.contact {
-  background-image: url('../images/maria-stewart-p4tj0g-_aMM-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.brands {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px
 }
 
-.contact-form {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
+.brands_slider_container {
+  height: 130px;
+  border: solid 1px #e8e8e8;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding-left: 97px;
+  padding-right: 97px;
+  background: #fff;
 }
 
-.contact-form h2 {
-  background: var(--navbar-bg-color);
-  color: var(--white-color);
-  padding: 30px 50px;
+.brands_slider {
+  height: 100%;
+  margin-top: 50px
 }
 
-.contact-form .row {
-  padding: 50px;
+.brands_item {
+  height: 100%
 }
 
-.arrow-icon {
-  background: var(--section-bg-color);
-  border-radius: 100px;
-  color: var(--dark-color);
-  font-size: var(--h5-font-size);
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  display: inline-block;
-  margin: auto;
+.brands_item img {
+  max-width: 100%
 }
 
-.arrow-icon:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
+.brands_nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 5px;
+  cursor: pointer
 }
 
-
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
-.custom-form .form-control {
-  background: var(--section-bg-color);
-  border: 0;
-  margin-bottom: 24px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+.brands_nav i {
+  color: #e5e5e5;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease
 }
 
-.custom-form button[type="submit"] {
-  background: var(--primary-color);
-  border-radius: 100px;
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  transition: all 0.3s;
-  margin-bottom: 0;
+.brands_nav:hover i {
+  color: #676767
 }
 
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--navbar-bg-color);
+.brands_prev {
+  left: 40px
 }
 
+.brands_next {
+  right: 40px
+}
 
 /*---------------------------------------
   SITE FOOTER              
