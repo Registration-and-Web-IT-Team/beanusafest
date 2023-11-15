@@ -28,6 +28,14 @@
   .about {
     animation: fadeInUp 1s ease-out; /* Tambahkan animasi fadeInUp ke elemen .about */
   }
+
+  .bungkus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   
   /* Gaya tambahan untuk membuat tampilan lebih menarik */
   .about h2 {

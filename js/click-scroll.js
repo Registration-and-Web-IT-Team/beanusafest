@@ -4,15 +4,23 @@ var sectionArray = [1, 2, 3, 4, 5, 6, 7];
 
 $(document).scroll(function () {
     $.each(sectionArray, function (index, value) {
-        var offsetSection = $('#' + 'section_' + value).offset().top - 84;
-        var docScroll = $(document).scrollTop();
-        var docScroll1 = docScroll + 1;
+        var sectionId = 'section_' + value;
+        var sectionElement = $('#' + sectionId);
 
-        if (docScroll1 >= offsetSection) {
-            $('.navbar-nav .nav-item .nav-link').removeClass('active');
-            $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');
-            $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
-            $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
+        // Pemeriksaan apakah elemen dengan id yang diharapkan ada
+        if (sectionElement.length > 0) {
+            var offsetSection = sectionElement.offset().top - 84;
+            var docScroll = $(document).scrollTop();
+            var docScroll1 = docScroll + 1;
+
+            if (docScroll1 >= offsetSection) {
+                $('.navbar-nav .nav-item .nav-link').removeClass('active');
+                $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');
+                $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
+                $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
+            }
+        } else {
+            console.error('Elemen dengan id ' + sectionId + ' tidak ditemukan.');
         }
     });
 });
