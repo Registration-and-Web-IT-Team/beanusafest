@@ -1,2 +1,0 @@
-# beanusafest
-Landing Page Beanusafest
