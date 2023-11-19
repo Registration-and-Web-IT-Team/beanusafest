@@ -282,8 +282,8 @@ strong {
   right: 0;
   left: 0;
   transition: all 0.3s;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .navbar-brand {
