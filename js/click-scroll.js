@@ -30,7 +30,7 @@ $('.click-scroll').click(function (e) {
     if (sectionArray[index] === 7) {
         // Gantilah URL_FORMULIR dengan URL formulir Google Anda
         var urlFormulir = "http://bit.ly/beanusafest";
-        window.open(urlFormulir, "_blank");
+        window.location.href = urlFormulir;
     } else {
         var sectionId = 'section_' + sectionArray[index];
         var offsetClick = $('#' + sectionId).offset().top - 84;
