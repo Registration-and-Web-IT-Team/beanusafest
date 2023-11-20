@@ -1,6 +1,6 @@
 //jquery-click-scroll
 
-var sectionArray = [1, 2, 3, 4, 5, 6, 7];
+var sectionArray = [1, 2, 3, 4, 7];
 
 $(document).scroll(function () {
     $.each(sectionArray, function (index, value) {
@@ -30,7 +30,7 @@ $('.click-scroll').click(function (e) {
     if (sectionArray[index] === 7) {
         // Gantilah URL_FORMULIR dengan URL formulir Google Anda
         var urlFormulir = "http://bit.ly/beanusafest";
-        window.location.href = urlFormulir;
+        window.open(urlFormulir, "_blank")
     } else {
         var sectionId = 'section_' + sectionArray[index];
         var offsetClick = $('#' + sectionId).offset().top - 84;
